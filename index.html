@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LifeSecure — Protection Plans Built For You</title>
+  <meta
+    name="description"
+    content="Find the right insurance plan for your needs with a smart and beautiful recommendation website."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="aurora">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="mainNav">
+    <a href="#home" class="nav-logo">LifeSecure</a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#recommend">Get Quote</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <a href="#recommend" class="nav-cta">Get My Plan</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-copy">
+      <div class="hero-badge">🇲🇾 Serving Malaysians since 2018</div>
+
+      <h1 data-aos="fade-up" data-aos-duration="800">
+        Protection Plans <br />
+        <span class="grad">Built For You</span>
+      </h1>
+
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="120">
+        Instant recommendation engine pairing you with the right takaful or insurance plan — fast, transparent, and easy to understand.
+      </p>
+
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="220">
+        <a href="#recommend" class="btn-primary">Check My Plan</a>
+        <a href="#plans" class="btn-ghost">View All Plans</a>
+      </div>
+
+      <div class="hero-stats" data-aos="fade-up" data-aos-delay="320">
+        <div class="hero-stat">
+          <div class="num"><span class="count-up" data-target="12400">0</span>+</div>
+          <div class="lbl">Clients Protected</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num"><span class="count-up" data-target="98">0</span>%</div>
+          <div class="lbl">Claim Satisfaction</div>
+        </div>
+        <div class="hero-stat">
+          <div class="num">RM <span class="count-up" data-target="240">0</span>M+</div>
+          <div class="lbl">Claims Supported</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card" data-aos="fade-left" data-aos-delay="150">
+      <div class="hero-card-label">Recommended Plans</div>
+
+      <div class="hero-visual">
+        <img src="TeamB_logo.png" alt="TeamB Logo" class="hero-image-fit" />
+      </div>
+
+      <div class="hero-mini-form">
+        <div class="hero-mini-grid">
+          <div class="field-group full">
+            <label for="heroName">Full Name</label>
+            <input id="heroName" type="text" placeholder="Your full name" />
+          </div>
+
+          <div class="field-group">
+            <label for="heroDob">Date of Birth</label>
+            <input id="heroDob" type="date" />
+          </div>
+
+          <div class="field-group">
+            <label for="heroGender">Gender</label>
+            <select id="heroGender">
+              <option value="">Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+
+          <div class="field-group full">
+            <label for="heroBudget">Monthly Budget</label>
+            <select id="heroBudget">
+              <option value="">Select budget range</option>
+              <option value="100">RM50 – RM120</option>
+              <option value="180">RM120 – RM220</option>
+              <option value="300">RM220 – RM380</option>
+              <option value="400">RM380+</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="button" class="btn-dark" id="heroStartBtn">Check My Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div data-aos="fade-up">
+      <div class="section-label">Simple Process</div>
+      <div class="section-title">3 Steps to Your<br />Perfect Plan</div>
+      <p class="section-sub">
+        No confusing process. Just a clean flow that helps people understand what suits them best.
+      </p>
+    </div>
+
+    <div class="steps-grid">
+      <div class="step-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="step-num">01</div>
+        <h3>Tell Us About You</h3>
+        <p>Fill in your personal details, lifestyle, budget, and goal in under 60 seconds.</p>
+      </div>
+
+      <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="step-num">02</div>
+        <h3>Get Instant Recommendation</h3>
+        <p>We match your profile against plan logic and highlight the best-fit option.</p>
+      </div>
+
+      <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="step-num">03</div>
+        <h3>Chat on WhatsApp</h3>
+        <p>One tap sends your details and selected plan directly to the consultant.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <div class="plans-header" data-aos="fade-up">
+      <div>
+        <div class="section-label">Pricing</div>
+        <div class="section-title">Plans For Every Budget</div>
+      </div>
+      <p class="section-sub compact">
+        Contributions shown are indicative. Personalised quotes will be confirmed on WhatsApp.
+      </p>
+    </div>
+
+    <div class="plans-grid">
+      <div class="plan-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="plan-name">Basic</div>
+        <div class="plan-price"><span class="amount">RM 120</span> <span class="suffix">/month est.</span></div>
+        <p class="plan-desc">Essential protection for individuals just starting their financial journey.</p>
+        <hr class="plan-divider" />
+        <ul class="plan-features">
+          <li>Medical card coverage</li>
+          <li>Basic life protection</li>
+          <li>Wellness support</li>
+          <li>24/7 claims assistance</li>
+        </ul>
+        <button class="plan-btn" data-tier="Basic">Get Started</button>
+      </div>
+
+      <div class="plan-card featured" data-aos="fade-up" data-aos-delay="100">
+        <div class="plan-badge">Most Popular</div>
+        <div class="plan-name">Standard</div>
+        <div class="plan-price"><span class="amount">RM 240</span> <span class="suffix">/month est.</span></div>
+        <p class="plan-desc">Balanced coverage for working adults and growing families.</p>
+        <hr class="plan-divider" />
+        <ul class="plan-features">
+          <li>Comprehensive medical card</li>
+          <li>Critical illness cover</li>
+          <li>Family protection rider</li>
+          <li>Investment-linked structure</li>
+          <li>Accident and disability support</li>
+        </ul>
+        <button class="plan-btn" data-tier="Standard">Get Started</button>
+      </div>
+
+      <div class="plan-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="plan-name">Premium</div>
+        <div class="plan-price"><span class="amount">RM 380</span> <span class="suffix">/month est.</span></div>
+        <p class="plan-desc">Maximum protection with stronger long-term security and wealth planning.</p>
+        <hr class="plan-divider" />
+        <ul class="plan-features">
+          <li>Full medical coverage</li>
+          <li>Life and critical illness benefits</li>
+          <li>Hibah or wealth planning</li>
+          <li>High accident coverage</li>
+          <li>Contribution waiver support</li>
+          <li>Priority consultant guidance</li>
+        </ul>
+        <button class="plan-btn" data-tier="Premium">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="recommend">
+    <div data-aos="fade-up">
+      <div class="section-label">Get Your Match</div>
+      <div class="section-title">Find The Right Plan<br />In 60 Seconds</div>
+    </div>
+
+    <div class="form-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <div class="form-left">
+        <h3>We Do The Heavy Lifting — You Just Chat</h3>
+        <p>
+          Answer a few quick questions and we’ll surface the plan that fits your life best. Then continue directly on WhatsApp.
+        </p>
+
+        <div class="form-perks">
+          <div class="perk"><div class="perk-icon">⚡</div><span>Instant personalised recommendation</span></div>
+          <div class="perk"><div class="perk-icon">🔒</div><span>Basic input sanitisation and safe output handling</span></div>
+          <div class="perk"><div class="perk-icon">💬</div><span>Auto-filled WhatsApp consultation flow</span></div>
+          <div class="perk"><div class="perk-icon">🎯</div><span>Simple and easy-to-understand experience</span></div>
+        </div>
+      </div>
+
+      <form class="rec-form" id="recForm" novalidate>
+        <div class="field-group">
+          <label for="fName">Full Name</label>
+          <input type="text" id="fName" placeholder="Your full name" required />
+          <small class="error-text" id="fNameError"></small>
+        </div>
+
+        <div class="form-row">
+          <div class="field-group">
+            <label for="fDob">Date of Birth</label>
+            <input type="date" id="fDob" required />
+            <small class="error-text" id="fDobError"></small>
+          </div>
+
+          <div class="field-group">
+            <label for="fGender">Gender</label>
+            <select id="fGender" required>
+              <option value="">Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <small class="error-text" id="fGenderError"></small>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field-group">
+            <label for="fSmoker">Smoker?</label>
+            <select id="fSmoker" required>
+              <option value="">Select</option>
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+            <small class="error-text" id="fSmokerError"></small>
+          </div>
+
+          <div class="field-group">
+            <label for="fMarital">Marital Status</label>
+            <select id="fMarital" required>
+              <option value="">Select</option>
+              <option value="Single">Single</option>
+              <option value="Married">Married</option>
+            </select>
+            <small class="error-text" id="fMaritalError"></small>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field-group">
+            <label for="fIncome">Monthly Income</label>
+            <select id="fIncome" required>
+              <option value="">Select income range</option>
+              <option value="1800-2200">RM1,800 – RM2,200</option>
+              <option value="2200-3800">RM2,200 – RM3,800</option>
+              <option value="3800-6000">RM3,800 – RM6,000</option>
+              <option value="6000-10000">RM6,000 – RM10,000</option>
+              <option value="10000-20000">RM10,000 – RM20,000</option>
+              <option value="20000-50000">RM20,000 – RM50,000</option>
+              <option value="50000+">RM50,000+</option>
+            </select>
+            <small class="error-text" id="fIncomeError"></small>
+          </div>
+
+          <div class="field-group">
+            <label for="fBudget">Monthly Budget</label>
+            <select id="fBudget" required>
+              <option value="">Select budget range</option>
+              <option value="100">RM50 – RM120</option>
+              <option value="180">RM120 – RM220</option>
+              <option value="300">RM220 – RM380</option>
+              <option value="400">RM380+</option>
+            </select>
+            <small class="error-text" id="fBudgetError"></small>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="fGoal">Protection Goal</label>
+          <select id="fGoal" required>
+            <option value="">Select</option>
+            <option value="Medical Card">Medical Card</option>
+            <option value="Hibah Takaful">Hibah Takaful</option>
+            <option value="Family Protection">Family Protection</option>
+          </select>
+          <small class="error-text" id="fGoalError"></small>
+        </div>
+
+        <button type="submit" class="btn-primary form-submit">Get My Recommendation</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <div data-aos="fade-up">
+      <div class="section-label">Social Proof</div>
+      <div class="section-title">Clients Love<br />LifeSecure</div>
+    </div>
+
+    <div class="swiper mySwiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">“Got my plan sorted in under 10 minutes. The WhatsApp flow was smooth and clear.”</p>
+            <div class="testi-author">
+              <div class="avatar">AN</div>
+              <div>
+                <div class="name">Amirah Nadia</div>
+                <div class="role">Teacher, Selangor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">“Finally found a family protection plan that fits my RM240 budget. Very easy to understand.”</p>
+            <div class="testi-author">
+              <div class="avatar">RH</div>
+              <div>
+                <div class="name">Razif Hakim</div>
+                <div class="role">Engineer, Johor</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">“Transparent, simple, and professional. The consultant explained everything clearly on WhatsApp.”</p>
+            <div class="testi-author">
+              <div class="avatar">SL</div>
+              <div>
+                <div class="name">Siti Liyana</div>
+                <div class="role">Business Owner, KL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="testi-card">
+            <div class="stars">★★★★★</div>
+            <p class="testi-text">“As a smoker I was worried about cost. The recommendation helped me find a more realistic option.”</p>
+            <div class="testi-author">
+              <div class="avatar">MF</div>
+              <div>
+                <div class="name">Muhd Faiz</div>
+                <div class="role">Driver, Penang</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div data-aos="fade-up">
+      <div class="section-label">Questions</div>
+      <div class="section-title">Frequently Asked</div>
+    </div>
+
+    <div class="faq-list" data-aos="fade-up" data-aos-delay="100">
+      <div class="faq-item">
+        <div class="faq-q">How does the recommendation work?<span class="icon">+</span></div>
+        <div class="faq-a"><p>It uses your age, lifestyle, budget, income range, and goal to suggest a suitable starting plan.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Are the prices shown exact?<span class="icon">+</span></div>
+        <div class="faq-a"><p>They are indicative estimates. Final pricing depends on underwriting, occupation, and plan structure.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">What happens after I click WhatsApp?<span class="icon">+</span></div>
+        <div class="faq-a"><p>Your details and selected package are pre-filled so the consultant can continue faster with the right context.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Can I change my plan later?<span class="icon">+</span></div>
+        <div class="faq-a"><p>Yes, many plans can be adjusted later depending on provider rules and your future needs.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">LifeSecure</a>
+        <p>Helping Malaysians find the right protection plan with a cleaner and easier digital experience.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#recommend">Get Quote</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://wa.me/60149449065" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></li>
+          <li><a href="mailto:hello@lifesecure.my">hello@lifesecure.my</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 LifeSecure. All rights reserved.</span>
+      <span>Designed for smooth mobile and desktop experience.</span>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="resultsModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <h3 id="modalTitle">Your Recommendation</h3>
+        <button class="modal-close" id="modalClose" aria-label="Close modal">✕</button>
+      </div>
+
+      <p class="modal-sub">Based on your profile, here are the plans that best fit your needs.</p>
+
+      <div class="result-cards" id="resultCards"></div>
+    </div>
+  </div>
+
+  <button class="wa-float" id="waFloat" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </button>
+</body>
+</html>
